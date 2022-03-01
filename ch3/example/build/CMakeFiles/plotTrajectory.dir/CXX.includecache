@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tan/reading/slambook2/ch3/example/plotTrajectory.cpp
+pangolin/pangolin.h
+-
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Geometry
+-
+unistd.h
+-
+
