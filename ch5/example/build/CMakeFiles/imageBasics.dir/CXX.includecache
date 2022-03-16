@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tan/reading/slambook2/ch5/example/imageBasics.cpp
+iostream
+-
+chrono
+-
+opencv4/opencv2/core/core.hpp
+-
+opencv4/opencv2/highgui/highgui.hpp
+-
+

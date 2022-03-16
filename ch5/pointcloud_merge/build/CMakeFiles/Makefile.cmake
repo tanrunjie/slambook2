@@ -18,6 +18,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake"
   "/usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake"
   "/usr/local/lib/cmake/Pangolin/PangolinTargets.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVModules.cmake"
   "/usr/local/share/sophus/cmake/SophusConfig.cmake"
   "/usr/local/share/sophus/cmake/SophusConfigVersion.cmake"
   "/usr/local/share/sophus/cmake/SophusTargets.cmake"
@@ -62,5 +66,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/trajectoryError.dir/DependInfo.cmake"
+  "CMakeFiles/join.dir/DependInfo.cmake"
   )

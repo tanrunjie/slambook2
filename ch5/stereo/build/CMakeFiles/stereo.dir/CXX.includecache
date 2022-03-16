@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tan/reading/slambook2/ch5/stereo/stereo.cpp
+opencv4/opencv2/opencv.hpp
+-
+vector
+-
+string
+-
+eigen3/Eigen/Core
+-
+pangolin/pangolin.h
+-
+unistd.h
+-
+

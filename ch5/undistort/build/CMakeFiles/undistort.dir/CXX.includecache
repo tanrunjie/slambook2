@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tan/reading/slambook2/ch5/undistort/undistortImage.cpp
+opencv4/opencv2/opencv.hpp
+-
+string
+-
+
