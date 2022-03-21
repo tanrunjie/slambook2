@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tan/reading/slambook2/ch6/ceres_curve_fitting/gaussNewton.cpp
+iostream
+-
+chrono
+-
+opencv4/opencv2/opencv.hpp
+-
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Dense
+-
+vector
+-
+

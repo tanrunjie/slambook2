@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named gaussNewton
+
+# Build rule for target.
+gaussNewton: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gaussNewton
+.PHONY : gaussNewton
+
+# fast build rule for target.
+gaussNewton/fast:
+	$(MAKE) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/build
+.PHONY : gaussNewton/fast
+
+#=============================================================================
 # Target rules for targets named g2oCurveFitting
 
 # Build rule for target.
@@ -190,6 +203,33 @@ g2oCurveFitting.cpp.s:
 	$(MAKE) -f CMakeFiles/g2oCurveFitting.dir/build.make CMakeFiles/g2oCurveFitting.dir/g2oCurveFitting.cpp.s
 .PHONY : g2oCurveFitting.cpp.s
 
+gaussNewton.o: gaussNewton.cpp.o
+
+.PHONY : gaussNewton.o
+
+# target to build an object file
+gaussNewton.cpp.o:
+	$(MAKE) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/gaussNewton.cpp.o
+.PHONY : gaussNewton.cpp.o
+
+gaussNewton.i: gaussNewton.cpp.i
+
+.PHONY : gaussNewton.i
+
+# target to preprocess a source file
+gaussNewton.cpp.i:
+	$(MAKE) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/gaussNewton.cpp.i
+.PHONY : gaussNewton.cpp.i
+
+gaussNewton.s: gaussNewton.cpp.s
+
+.PHONY : gaussNewton.s
+
+# target to generate assembly for a file
+gaussNewton.cpp.s:
+	$(MAKE) -f CMakeFiles/gaussNewton.dir/build.make CMakeFiles/gaussNewton.dir/gaussNewton.cpp.s
+.PHONY : gaussNewton.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -197,6 +237,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... gaussNewton"
 	@echo "... edit_cache"
 	@echo "... g2oCurveFitting"
 	@echo "... ceresCurveFitting"
@@ -206,6 +247,9 @@ help:
 	@echo "... g2oCurveFitting.o"
 	@echo "... g2oCurveFitting.i"
 	@echo "... g2oCurveFitting.s"
+	@echo "... gaussNewton.o"
+	@echo "... gaussNewton.i"
+	@echo "... gaussNewton.s"
 .PHONY : help
 
 
