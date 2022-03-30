@@ -48,7 +48,7 @@ int main(int argc, char ** argv)
     for(int i=0;i<N ;i++)
     {
         problem.AddResidualBlock( // 加误差项
-            // 自动求导，模板参数： 误差类型，输出维度，输入维度，要与struct一致
+            // 自动求导，模板参数： 模型误差类型，输出维度，输入维度，要与struct一致
             new ceres::AutoDiffCostFunction<CURVE_FITTING_COST, 1, 3>(
                 new CURVE_FITTING_COST(x_data[i], y_data[i])
             ), 
